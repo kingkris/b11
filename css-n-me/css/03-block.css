@@ -1,0 +1,100 @@
+/*
+
+Few points to remeber for every property
++++++++++++++++++++++++++++++++++++++++++++++++
+• Default values for different elements
+• Overriding & different values that can be given
+• Inheritence
+• Can they be applied to all elements
+• Can they be animated
+
+
+
+Block related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+word-spacing      : normal | <length>
+letter-spacing    : normal | <length>
+vertical-align    : baseline | sub | super | text-top | 
+                    text-bottom | middle | top | bottom | <percentage> | <length>
+text-align        : left | right | center | justify
+text-indent       : normal | <length>
+white-space       : normal | pre | nowrap| pre-wrap | pre-line
+display           : block | inline | inline-block | list-item |
+                    table | table-row | table-cell | none
+
+
+content           : 
+text-overflow     : clip | ellipsis
+
+
+
+
+auto;
+inherit;
+
+
+*/
+/*----------  Header styles  ----------*/
+
+
+.spacing-demo{
+  border: solid 4px red;
+  /* word-spacing: -25px; negative vlaue */
+  word-spacing: 5px;
+  letter-spacing: -4px;
+}
+.dabba{
+  width: 350px;
+  height: 80px;
+  border: solid 4px red;
+  margin-bottom: 10px;
+}
+
+.align-demo{
+  text-align: center;
+  vertical-align: middle;
+}
+.align-demo2{
+  border: solid 4px green;
+  text-align: justify;
+  text-indent: -40px;
+}
+
+
+.panel {
+  background-color: #fff;
+  border: solid 1px #CCC;
+  margin: 0 auto;
+}
+
+.panel header {
+  background-color: green;
+  padding: 10px;
+  color: #FFF;
+}
+.panel header h2 {
+  font-weight: normal;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.panel header h2::before {
+  content: "Chapter 1: ";
+  font-size: 16px;
+  color: #E5E5E5
+}
+.panel .content {
+  padding: 10px;
+}
+
+
+
+.white-space-demo{
+  white-space: nowrap;
+  display: none;
+}
+
+
+

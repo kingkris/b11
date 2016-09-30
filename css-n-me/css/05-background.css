@@ -1,0 +1,100 @@
+/*
+
+Few points to remeber for every property
++++++++++++++++++++++++++++++++++++++++++++++++
+• Default values for different elements
+• Overriding & different values that can be given
+• Inheritence
+• Can they be applied to all elements
+• Can they be animated
+
+
+
+Background related style properties
++++++++++++++++++++++++++++++++++++++++++++
+background-color
+background-image
+background-repeat: repeat | no-repeat | repeat-x | repeat-y
+background-attachment:-fixed | scroll
+background-position:;
+   Values you give ar X Y cordinates
+    1. keywords - for x it is  - left center right
+                  for y it is  - top center bottom
+    2. Length -  
+
+  background :[color] [image] [repeat] [attachment] [position];
+
+
+background-size: –contain, cover
+
+background-origin: –border-box, padding-box, content-box
+background-clip: –
+
+multiple backgrounds
+
+
+transparent;
+auto;
+inherit;
+
+
+*/
+
+section.content{
+  background-image: url('../img/img-xl.jpg');
+  min-height: 600px;
+  background-attachment: fixed;
+}
+.dabba{
+  width: 800px;
+  min-height: 140px;
+  margin: 10px auto;
+  font-size: 20px;
+  padding: 20px;
+  border: solid 2px grey;
+}
+.bg-demo1{
+  background-color: #fff;
+  /*background-image: url('../img/bullet.png');*/
+  background-image: url('../img/img-xl.jpg');
+  /*background-repeat: repeat;*/
+  /*background-position: left center;*/
+  /* background-position: 50px 120px; */
+   /*background-position: 100% 50%; */
+   -webkit-background-size: contain;
+   background-size: contain;
+}
+.bg-demo2{
+  background-image: url('../img/bullet.png');
+}
+
+.bg-demo3{
+  background-image: url('../img/wanna-ride.gif');
+  height: 500px;
+}
+
+
+/**
+ *
+ * Multiple backgrounds
+ *
+ */
+
+.some-new-dabba{
+  color: green;
+  font-size: 30px;
+  border: solid 1px red;
+  padding: 30px;
+  background-color: #fff;
+  margin: 30px 40px;
+  background-image: url('../img/bullet.png'), url('../img/img-xl.jpg');
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+}
+.some-new-dabba li{
+  color: blue;
+}
+
+
+
+

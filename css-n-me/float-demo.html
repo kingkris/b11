@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Float demo</title>
+<style>
+	body{
+		font-family: tahoma, sans-serif;
+		font-size: 14px;
+		color: #444;
+		margin: 0;
+		background-color: #f2f2f2;
+	}
+	header{
+		background-color: #060;
+		border-bottom: solid 5px #014a01;
+		padding: 10px 20px;
+	}
+	header:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.logo{
+		border:solid 1px red;
+		float: left;
+	}
+	.logo img{
+		display: block;
+	}
+	.call{
+		border:solid 1px red;
+		float: right;
+		margin-top: 23.5px;
+		font-size: 24px;
+		color: #FFF;
+	}
+
+	.modal{
+		border: solid 1px #0072c6;
+		padding: 20px 25px;
+		width: 425px;
+		margin: 20px auto;
+		background-color: #fff;
+		box-shadow: 10px 0 5px rgba(255,0,0,.5);
+	}
+	.modal h2{
+		margin: 10px 0 31px;
+		font-weight: normal;
+		color: #0072c6;
+		font-size: 25px;
+	}
+	.modal p{
+		margin: 0 0 35px;
+		color: #666;
+		font-size:14px;
+	}
+	.options{}
+	.options div{
+		margin-bottom: 5px;
+		color: #666;
+		font-size:14px;
+	}
+	.options div a{
+		border: solid 1px green;
+		width: 65px;
+		text-align: center;
+		line-height: 23px;
+		font-size: 14px;
+		margin-right: 26px;
+		display: inline-block;
+		color: #444;
+		text-decoration: none;
+	}
+	.options div a span{
+		text-decoration: underline;
+	}
+	.options div a:hover{
+		border: solid 1px green;
+		background-color: #fa0;
+	}
+.star-rating{
+	height: 20px;
+	background-color: #515ED8;
+	background-image: url(img/hallow-star.png);
+	margin: 15px auto;
+	cursor: pointer;
+}
+.one-star{width:24px;}
+.two-star{width:48px;}
+.three-star{width:72px;}
+.four-star{width:96px;}
+.five-star{width:120px;}
+.half{padding-left: 12px;}
+.star-rating:hover{
+	background-color: #D851A7;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+	<div class="logo">
+		<a href="#"><img src="https://api.fnkr.net/testimg/100x75/00CED1/FFF/?text=Whatever" alt="whatever"></a>
+	</div>
+	<div class="call">Call me</div>
+</header>
+
+
+
+
+<div class="star-rating one-star"></div>
+<div class="star-rating one-star half"></div>
+<div class="star-rating two-star"></div>
+<div class="star-rating two-star half"></div>
+<div class="star-rating three-star"></div>
+<div class="star-rating three-star half"></div>
+<div class="star-rating four-star"></div>
+<div class="star-rating four-star half"></div>
+<div class="star-rating five-star"></div>
+<div class="star-rating five-star half"></div>
+
+
+<div class="modal">
+	<h2>Your subscription has expired</h2>
+	<p>To keep using whatver, you have to just pay whatever you have</p>
+	<div class="options">
+		<div><a href="#"><span>B</span>uy</a> I want to renew or buy Office.</div>
+		<div><a href="#">Enter <span>K</span>ey</a> I have a product key.</div>
+		<div><a href="#"><span>S</span>ign in</a> Add this computer to an active account.</div>
+	</div>
+</div>
+
+<div class="container">
+	
+</div>
+	
+</body>
+</html>

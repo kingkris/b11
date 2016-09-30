@@ -1,0 +1,124 @@
+/*
+
+Few points to remeber for every property
++++++++++++++++++++++++++++++++++++++++++++++++
+• Default values for different elements
+• Overriding & different values that can be given
+• Inheritence
+• Can they be applied to all elements
+• Can they be animated
+
+
+
+Border related style properties
++++++++++++++++++++++++++++++++++++++++++++
+border-style: none solid dotted dashed double ridge groove inset outset
+border-width: pixels 
+border-color: 
+
+border-left-style
+border-left-width
+border-left-color
+
+border-right-style
+border-right-width
+border-right-color
+
+border-top-style
+border-top-width
+border-top-color
+
+border-bottom-style
+border-bottom-width
+border-bottom-color
+
+border:[style] [width] [color];
+  border-left:;
+  border-right:;
+  border-top:;
+  border-bottom:;
+
+border-radius
+border-image
+
+
+border-collapse:;
+border-spacing:;
+empty-cells: –show | hide
+
+
+
+
+
+auto;
+inherit;
+
+
+*/
+
+.dabba{
+  width: 300px;
+  height: 100px;
+  background-color: #CCC;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 100px;
+  font-size: 26px;
+  color: green;
+}
+
+
+
+.demobdr{
+  border-style: inset;
+  border-color: red;
+  border-width: 9px;
+}
+.demobdr1{
+  border-style: solid dotted dashed none;
+  border-color: red black green yellow;
+  border-width: 9px;
+}
+.demobdr2{
+  border: solid 5px red;
+  /* border-top-right-radius: 30px; */
+  border-radius: 50%;
+  height: 300px;
+  line-height: 300px;
+}
+
+.readmore{
+  text-decoration: none;
+  background-color: #b018d1;
+  color: #FFF;
+  display: inline-block;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0 10px 2px;
+  position: relative;
+}
+.readmore:after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 40px 11px 40px;
+  border-color: transparent transparent transparent #b018d1;
+  position: absolute;
+  right: 42px;
+  top: 0;
+  transition: all 250ms ease;
+  border-radius: 5px;
+}
+.readmore:hover{
+  background-color: #6D0A82;
+}
+.readmore:hover:after{
+  border-left-color:#6D0A82;
+  right: -28px;
+}
+
+
+
+
+

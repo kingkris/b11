@@ -1,0 +1,451 @@
+/*
+
+Few points to remeber for every property
++++++++++++++++++++++++++++++++++++++++++++++++
+• Default values for different elements
+• Overriding & different values that can be given
+• Inheritence
+• Can they be applied to all elements
+• Can they be animated
+
+
+
+BOX related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+width, min-width, max-width
+height, min-height, max-height 
+overflow: visible | hidden | scroll | auto
+
+padding
+margin
+
+float : left | right | none
+clear: none | left | right | both
+
+box-sizing: content-box | padding-box | border-box
+resize -none | both | horizontal | vertical 
+opacity 
+
+
+column-count
+  column-gap  
+  column-fill –auto | balance
+  column-rule -<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>
+
+Flex-box
+Grids
+
+auto;
+inherit;
+
+*/
+
+.content{
+  width:1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  border:dotted 1px red;
+}
+
+
+/*Min width demo
++++++++++++++++++++++++++*/
+.dabba{
+  border:solid 1px red;
+  background: grey;
+  min-width: 150px;
+}
+b.dabba{
+  display: inline-block;
+} 
+
+/*Max-width demo
++++++++++++++++++++++++++*/
+.dabba1{
+  border:solid 1px red;
+  background: grey;
+  max-width: 150px;
+}
+b.dabba1{
+  display: inline-block;
+} 
+
+/*width demo
++++++++++++++++++++++++++*/
+.dabba2{
+  border:solid 1px red;
+  background: grey;
+  width: 150px;
+}
+b.dabba2{
+  display: inline-block;
+} 
+
+
+/*Min height demo
++++++++++++++++++++++++++*/
+.content .box{
+
+}
+
+.box{
+  border:solid 1px red;
+  background: grey;
+  min-height: 100px;
+  width: 250px;
+}
+b.box{
+  display: inline-block;
+} 
+
+.box-big{
+  width: 300px;
+  height: 200px;
+  border: solid 1px red;
+  background-color: lightblue;
+  overflow-y: auto;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.widget{
+  border:solid 1px green;
+  margin: 2px;
+  width: 200px;
+  float: left;
+}
+.widget + div{
+  border:solid 1px orange;
+  padding: 5px;
+  clear: both;
+}
+
+.content:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*+++++++ ---Responsive Grids --- +++++++*/
+.container *{
+  box-sizing: border-box;
+}
+.container{
+  background-color: #FFF;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+@media (min-width:768px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 748px;
+  }
+}
+@media (min-width:980px){
+  .container{
+    width: 960px;
+  }
+}
+
+@media (min-width:1200px){
+  .container{
+    width: 1170px;
+  }
+}
+
+
+
+
+.row{
+  border: dotted 1px #CCC;
+  margin: 5px -10px;
+}
+.row:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.row h2{
+  text-align: center;
+  clear: both;
+}
+
+.col{
+  padding: 10px;
+}
+.col p{
+  border: dotted 1px #CCC;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 0;
+}
+
+@media(min-width: 640px){
+  .col{
+    float: left;
+  }
+  ._full{width: 100%}
+  ._half,
+  ._quarter,
+  ._fourth,
+  ._fifth{width: 50%}
+  .vis-m{display:none;}
+}
+@media(min-width: 980px){
+  ._quarter{width: 33.333%}
+  ._fourth{width: 25%}
+  ._fifth{width: 20%}
+}
+@media(max-width:639px){
+  .hid-m{display:none;}
+}
+
+.boxa{
+  margin: 5% 10%;
+  border: solid 5px rgba(255,0,0,.2);
+  border-radius: 12px;
+  opacity: 1;
+}
+.boxa img{
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+.boxa h2{
+  background-color: #ffa;
+  padding: 15px;
+  margin: 0;
+  font-weight: normal;
+  border-radius: 0 0 8px 8px;
+}
+.banner-x{
+  border: solid 4px grey;
+  background-image: url('../img/img-xl.jpg');
+  background-size: cover;
+}
+.banner-x h2{
+  padding: 20% 15%;
+  margin: 0;
+  font-weight: normal;
+}
+
+
+.banner-y{
+  border: solid 4px grey;
+  margin: 15px 0;
+  position: relative;
+}
+.banner-y img{
+  max-width: 100%;
+  display: block;
+  opacity: .3
+}
+.banner-y h2{
+  background-color: rgba(0,0,0,.5);
+  padding: 15px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 5vw;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  color: #FFF;
+}
+
+.sidebar{
+  background-color: lightgrey;
+  border-left: solid 5px grey;
+  padding: 10px 20px 8px 10px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 250px;
+  overflow-x: auto;
+}
+
+.grey-bg{
+  background-color: #f1f1f1;
+  padding: 20px 0;
+}
+.grey-bg h2{
+  text-align: center;
+  font-weight: normal;
+  background-image: url('../img/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  padding-bottom: 30px;
+}
+
+.friends{
+  margin: 0 15px;
+  transition: width 300ms ease;
+}
+.friends:after{
+  clear: both;
+  display: table;
+  content: "";
+}
+.friends *{
+  box-sizing: border-box;
+}
+@media(min-width: 768px){
+  .friends{
+    margin-left: auto;
+    margin-right: auto;
+    width: 738px;
+  }
+}
+@media(min-width: 980px){
+  .friends{
+    width: 960px;
+  }
+}
+@media(min-width: 1200px){
+  .friends{
+    width: 1170px;
+  }
+}
+
+/* ---- individual friend block -----*/
+.friend{
+  padding: 0 10px;
+}
+@media(min-width: 640px){
+  .friend{
+    width: 50%;
+    float: left;
+  }
+}
+@media(min-width: 768px){
+  .friend{
+    width: 33.333%;
+  }
+}
+@media(min-width: 980px){
+  .friend{
+    width: 25%;
+  }
+}
+.f-wrap{
+  background-color: #FFF;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.f-wrap:hover{
+  background-color: lightgreen;
+  cursor: pointer;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.5);
+}
+
+.friend img{
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+.friend p{
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-left: 24px;
+  font-size: 13px;
+
+}
+.friend .place{
+  background-image: url('../img/ico-location.png');
+  float: left;
+}
+.friend .phone{
+  background-image: url('../img/ico-smiely.png');
+  float: right;
+}
+.friend .skills{
+  background-image: url('../img/ico-paper-plane.png');
+  clear: both;
+}
+
+
+/**
+ *
+ * Specificity check
+ *
+ */
+h1{
+  color: green !important;
+  text-align: center;
+}
+.heading{color: red}
+#heading{color: orange}
+
+/**
+ *
+ * Demo of nth child,
+ *
+ */
+.boxes{
+  width: 90%;
+  margin: 25px auto;
+  border: solid 3px #CCC;
+  background-color: #DEDEDE;
+  padding: 20px 10px;
+  position: relative;
+}
+.boxes:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+.boxes > div{ /*direct child selector*/
+  width: 33.333%;
+  padding: 10px;
+  float: left;
+}
+.boxes > div > div{ /*direct child selector*/
+  height: 100px;
+  border: dotted 1px #F00;
+  background-color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+.boxes > div:first-child > div{ /*direct child selector*/
+  background-color: #E604E3;
+}
+.boxes > div:last-child > div{ /*direct child selector*/
+  background-color: #0439E6;
+}
+.boxes > div:nth-child(odd) > div{ /*direct child selector*/
+  background-color: #4BCD11;
+}
+.boxes > div:nth-child(even) > div{ /*direct child selector*/
+  background-color: #1B9AC4;
+}
+.boxes > div:nth-child(7) > div{ /*direct child selector*/
+  border-color: blue;
+  border-width: 5px;
+}
+.boxes > div:nth-child(3n){ 
+  margin-bottom: 20px;
+}
+.boxes > div:nth-child(3n):after{ 
+  height: 3px;
+  background-color: red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}
+
+.sidebar h2 + p{ /*adjecenet selector*/
+  color: green
+}
+.sidebar h3 ~ p{ /*Sibling selector*/
+  color: green
+}
+

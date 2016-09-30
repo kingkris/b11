@@ -1,0 +1,109 @@
+/*
+
+Few points to remeber for every property
++++++++++++++++++++++++++++++++++++++++++++++++
+• Default values for different elements
+• Overriding & different values that can be given
+• Inheritence
+• Can they be applied to all elements
+• Can they be animated
+
+
+
+Font related style properties
++++++++++++++++++++++++++++++++++++++++++++
+  font-style: normal | italic | oblique
+  font-weight: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+  font-size:
+      px, %, em, rem, vw, vh
+  line-height:
+  font-family:
+    font: [font-style font-weight font-size/line-height font-family]
+  text-transform: none | uppercase | lowercase | capitalize
+  color:
+    colornames - eg. red;
+    hex decimal codes - eg. #FF0000
+    hex decimal shorthand property - eg. #F00
+    rgb value - eg. rgb(255,0,0)
+    rgba value - eg. rgba(255,0,0,1)
+  text-decoration:none | underline | overline | line-through
+
+Serif, Sans-serif, cursive, monospace
+
+
+• rgba(); css3
+
+text-shadow – css3
+
+
+auto;
+inherit;
+
+
+*/
+/*----------  Header styles  ----------*/
+
+
+.font-style-demo{
+  font-style: italic;
+}
+.font-size-demo{
+}
+
+.txt-demo{
+  line-height: 22px;
+  color:rgba(255,0,0,.1);
+}
+
+.fnt-styles-demo{
+  /*font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: verdana, tahoma, Sans-serif;*/
+/*Shorthand property*/
+  font: italic bold 20px/26px verdana, tahoma, Sans-serif;
+  text-transform: none;
+/*
+  color: #FF0000; hex code
+  color: #F00; hex code shorthand property
+  color: red;
+  color: rgb(255,0,0);
+*/
+  color: rgba(255,0,0,.5);
+  text-decoration: overline underline line-through;
+  text-shadow: 0 0 5px #000;
+}
+
+.main-heading{
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+}
+.main-heading span{
+  font-size: 70px;
+  display: block;
+}
+
+/**
+ *
+ * Inherit feature demo
+ *
+ */
+
+.some-new-dabba{
+  color: green;
+  font-size: 30px;
+  border: solid 1px red;
+  padding: 30px;
+  background-color: #fff;
+  margin: 30px 40px;
+  background-image: url('../img/bullet.png'), url('../img/img-xl.jpg');
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+}
+.some-new-dabba li{
+  color: blue;
+}
+
+

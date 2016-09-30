@@ -1,0 +1,177 @@
+/*
+
+Few points to remeber for every property
++++++++++++++++++++++++++++++++++++++++++++++++
+• Default values for different elements
+• Overriding & different values that can be given
+• Inheritence
+• Can they be applied to all elements
+• Can they be animated
+
+
+
+BOX related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+position: static | relative | absolute | sticky| fixed
+  Applies to all elements
+
+left, top, right, bottom
+  Applies to positioned elements
+
+z-index: auto | <integer>
+  Applies to positioned elements
+
+visibility: visible | hidden | collapse
+  Applies to all elements
+
+overflow: visible | hidden | scroll | auto
+overflow-x
+overflow-y
+
+auto;
+inherit;
+
+*/
+
+.content{
+  background-color: #FFF;
+  margin: 15px;
+  padding: 15px;
+}
+@media(min-width:768px){
+  .content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 738px;
+  }
+}
+@media(min-width:980px){
+  .content{
+    width: 960px;
+  }
+}
+@media(min-width:1200px){
+  .content{
+    width: 1170px;
+  }
+}
+@media(max-width:767px){
+  .only-mobile{
+    background-color: green;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media(min-width:768px){
+  .only-mobile{display: none}
+}
+@media(min-width:480px) and (max-width:767px){
+  .only-mobile{background-color: orange}
+}
+.content h2{
+  border-bottom: double 4px #CCC;
+  color: #444;
+}
+/*-------- position demo static -------- */
+.box1{
+  border:solid 1px #CCC;
+  margin: 0 10px 10px;
+  padding:10px;
+}
+.p-demo-static{
+  position: static;
+  background-color: wheat;
+  top: 100px;
+  left: 100px;
+}
+
+/*-------- position demo static -------- */
+.box2{
+  border:solid 1px #CCC;
+  margin: 0 10px 10px;
+  padding:10px;
+
+
+  -webkit-transition: all 250ms ease;
+     -moz-transition: all 250ms ease;
+      -ms-transition: all 250ms ease;
+       -o-transition: all 250ms ease;
+          transition: all 250ms ease;
+
+
+}
+.p-demo-relative{
+  background-color: wheat;
+
+  position: relative;
+  left: 100px;
+  top: 40px;
+}
+
+.orange     {background-color: orange}
+.blue       {background-color: blue}
+.green      {background-color: green}
+.red        {background-color: red}
+.indigo     {background-color: indigo}
+.lightgreen {background-color: lightgreen}
+.lightblue  {background-color: lightblue}
+
+.boxa2{
+  border: solid 1px #CCC;
+  margin-bottom: 6px;
+  padding: 10px;
+}
+.pdemo-rel{
+  position: relative;
+  left: 70px;
+  top: 70px;
+}
+
+.z-demo{
+  z-index: 3;
+  position: relative;
+}
+
+/*-------- position demo static -------- */
+.box3{
+  border:solid 1px #CCC;
+  margin: 0 10px 10px;
+  padding:10px;
+}
+
+.boxa3{
+  border: solid 1px #CCC;
+  margin-bottom: 6px;
+  padding: 10px;
+}
+.pdemo-abs{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.rel{
+  position: relative;
+}
+
+.boxa3.orange{
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.boxa3.lightgreen{
+  position: fixed;
+  left: 0;
+  top: 0;bottom:0;
+  height: 100px;
+  width: 90px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
