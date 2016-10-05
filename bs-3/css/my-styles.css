@@ -1,0 +1,21 @@
+.kg_blue {background-color: deepskyblue;}
+.kg_green {background-color: greenyellow;}
+.kg_red {background-color: darkred;}
+.kg_indigo {background-color: indigo;}
+.kg_violet{background-color: violet;}
+.kg_yellow{background-color: yellowgreen;}
+.kg_purple{background-color: purple;}
+.kg_orange{background-color: orangered;}
+.kg_pink{background-color: deeppink;}
+.kg_cyan{background-color: cyan;}
+.kg_gold{background-color: gold;}
+.kg_wheat{background-color: wheat}
+
+
+body{background-color: #bce8f1;}
+
+.kg_min-height{
+  min-height: 80px;
+  margin:15px 0;
+}
+
