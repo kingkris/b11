@@ -24,6 +24,29 @@ body{background-color: #bce8f1;}
 
 
 
+.kg_panel-greenblue {
+  border-color: #58a00a;
+}
+.kg_panel-greenblue > .panel-heading {
+  color: #fff;
+  background-color: #58a00a;
+  border-color: #58a00a;
+}
+.kg_panel-greenblue > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #58a00a;
+}
+.kg_panel-greenblue > .panel-heading .badge {
+  color: #58a00a;
+  background-color: #fff;
+}
+.kg_panel-greenblue > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #58a00a;
+}
+
+
+
+
+
 .glyphicon-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;

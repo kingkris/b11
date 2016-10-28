@@ -1,0 +1,120 @@
+body{
+  overflow-y: scroll;
+}
+.navbar-default{
+  box-shadow: 0 4px 6px -3px rgba(0,0,0,.5);
+  margin-bottom:0;
+}
+.navbar-brand{
+  padding:10px 15px;
+}
+.navbar-default .navbar-nav > li > a{
+  text-align: right;
+}
+
+
+
+.kg_banner{}
+.kg_banner img{
+  width:100%;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .kg_sublinks{
+    border:solid 2px red;
+  }
+}
+
+
+
+@font-face {
+  font-family: 'kris-icons';
+  src:  url('../fonts/kris-icons.eot?xy3le3');
+  src:  url('../fonts/kris-icons.eot?xy3le3#iefix') format('embedded-opentype'),
+  url('../fonts/kris-icons.ttf?xy3le3') format('truetype'),
+  url('../fonts/kris-icons.woff?xy3le3') format('woff'),
+  url('../fonts/kris-icons.svg?xy3le3#kris-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'kris-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\f002";
+}
+.icon-check:before {
+  content: "\f00c";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-chevron-left:before {
+  content: "\f053";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-chevron-down:before {
+  content: "\f078";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+.icon-caret-right:before {
+  content: "\f0da";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+
